@@ -1,5 +1,7 @@
 package com.travix.medusa.busyflights.domain.toughjet;
 
+import java.time.ZonedDateTime;
+
 public class ToughJetResponse {
 
     private String carrier;
@@ -8,8 +10,8 @@ public class ToughJetResponse {
     private double discount;
     private String departureAirportName;
     private String arrivalAirportName;
-    private String outboundDateTime;
-    private String inboundDateTime;
+    private ZonedDateTime outboundDateTime;
+    private ZonedDateTime inboundDateTime;
 
     public String getCarrier() {
         return carrier;
@@ -59,19 +61,19 @@ public class ToughJetResponse {
         this.arrivalAirportName = arrivalAirportName;
     }
 
-    public String getOutboundDateTime() {
+    public ZonedDateTime getOutboundDateTime() {
         return outboundDateTime;
     }
 
-    public void setOutboundDateTime(final String outboundDateTime) {
+    public void setOutboundDateTime(final ZonedDateTime outboundDateTime) {
         this.outboundDateTime = outboundDateTime;
     }
 
-    public String getInboundDateTime() {
+    public ZonedDateTime getInboundDateTime() {
         return inboundDateTime;
     }
 
-    public void setInboundDateTime(final String inboundDateTime) {
+    public void setInboundDateTime(final ZonedDateTime inboundDateTime) {
         this.inboundDateTime = inboundDateTime;
     }
 }

@@ -1,50 +1,55 @@
 package com.travix.medusa.busyflights.domain.crazyair;
 
+import java.time.ZonedDateTime;
+
+/**
+ * @author krish
+ */
 public class CrazyAirRequest {
 
-    private String origin;
-    private String destination;
-    private String departureDate;
-    private String returnDate;
-    private int passengerCount;
+  private String origin;
+  private String destination;
+  private ZonedDateTime departureDate;
+  private ZonedDateTime returnDate;
+  private int passengerCount;
 
-    public String getOrigin() {
-        return origin;
-    }
+  public String getOrigin() {
+    return origin;
+  }
 
-    public void setOrigin(final String origin) {
-        this.origin = origin;
-    }
+  public void setOrigin(final String origin) {
+    this.origin = origin;
+  }
 
-    public String getDestination() {
-        return destination;
-    }
+  public String getDestination() {
+    return destination;
+  }
 
-    public void setDestination(final String destination) {
-        this.destination = destination;
-    }
+  public void setDestination(final String destination) {
+    this.destination = destination;
+  }
 
-    public String getDepartureDate() {
-        return departureDate;
-    }
+  public ZonedDateTime getDepartureDate() {
+    return departureDate;
+  }
 
-    public void setDepartureDate(final String departureDate) {
-        this.departureDate = departureDate;
-    }
+  public void setDepartureDate(final ZonedDateTime departureDate) {
+    this.departureDate = departureDate;
+  }
 
-    public String getReturnDate() {
-        return returnDate;
-    }
+  public ZonedDateTime getReturnDate() {
+    return returnDate;
+  }
 
-    public void setReturnDate(final String returnDate) {
-        this.returnDate = returnDate;
-    }
+  public void setReturnDate(final ZonedDateTime returnDate) {
+    this.returnDate = returnDate;
+  }
 
-    public int getPassengerCount() {
-        return passengerCount;
-    }
+  public int getPassengerCount() {
+    return passengerCount;
+  }
 
-    public void setPassengerCount(final int passengerCount) {
-        this.passengerCount = passengerCount;
-    }
+  public void setPassengerCount(final int passengerCount) {
+    this.passengerCount = passengerCount;
+  }
 }
