@@ -16,7 +16,7 @@ public class ToughJetService {
 
   public List<ToughJetResponse> populateDummyData() {
     List<ToughJetResponse> responses = new ArrayList<>();
-    for (int i = 0; i <= 10; i++) {
+    for (int i = 1; i <= 12; i++) {
       ToughJetResponse flight1 = new ToughJetResponse();
       flight1.setBasePrice(120);
       flight1.setDiscount(0);

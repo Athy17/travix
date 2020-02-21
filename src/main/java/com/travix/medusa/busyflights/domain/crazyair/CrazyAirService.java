@@ -16,7 +16,7 @@ public class CrazyAirService {
 
   public List<CrazyAirResponse> populateDummyData() {
     List<CrazyAirResponse> responses = new ArrayList<>();
-    for (int i = 0; i <= 10; i++) {
+    for (int i = 1; i <= 12; i++) {
       CrazyAirResponse flight1 = new CrazyAirResponse();
       flight1.setPrice(144.50);
       flight1.setAirline("ToughJet");
