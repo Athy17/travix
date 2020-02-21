@@ -10,6 +10,10 @@ import com.travix.medusa.busyflights.domain.crazyair.CrazyAirService;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Adapter for CrazyAir
+ * @author krish
+ */
 public class CrazyAirServiceAdapter implements SearchFlightAdapter {
 
   CrazyAirService service;

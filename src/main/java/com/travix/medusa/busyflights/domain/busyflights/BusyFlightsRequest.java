@@ -13,6 +13,10 @@ public class BusyFlightsRequest {
   private ZonedDateTime returnDate;
   private int numberOfPassengers;
 
+  public BusyFlightsRequest() {
+    numberOfPassengers = 0;
+  }
+
   public String getOrigin() {
     return origin;
   }
