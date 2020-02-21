@@ -12,7 +12,7 @@ public class ToughJetService {
         flight1.setTax(12);
         flight1.setDepartureAirportName("LHR");
         flight1.setArrivalAirportName("AMS");
-        flight1.setOutboundDateTime(ZonedDateTime.parse("2020-12-11T10:00:00"));
+        flight1.setOutboundDateTime(ZonedDateTime.now());
         return Arrays.asList(flight1, new ToughJetResponse(),new ToughJetResponse());
     }
 }
