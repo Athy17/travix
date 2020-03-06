@@ -1,5 +1,8 @@
 package com.travix.medusa.busyflights.domain.busyflights;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.time.ZonedDateTime;
 
 /**
@@ -7,13 +10,20 @@ import java.time.ZonedDateTime;
  */
 public class BusyFlightsRequest {
 
+  @NotNull
+  @Size(max = 3, message = "Origin should not contain >3 characters.")
   private String origin;
+  @NotNull
+  @Size(max = 3, message = "Destination should not contain >3 characters.")
   private String destination;
   private ZonedDateTime departureDate;
   private ZonedDateTime returnDate;
+  @Max(value = 4, message = "Maximum allowed passenger list is 4.")
   private int numberOfPassengers;
 
   public BusyFlightsRequest() {
+    origin = "";
+    destination = "";
     numberOfPassengers = 0;
   }
 
